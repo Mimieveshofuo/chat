@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  background-color: #f9f4fa;
+  height: 100vh;
+}
+.purple-background {
+  /* padding: 30px; */
+  width: 40%;
+  position: absolute;
+  left: -83px;
+  height: 90vh;
+  background: linear-gradient(to bottom, rgb(233, 66, 255) 0%, hsl(264, 100%, 61%) 100%);
+  border-bottom-right-radius: 100%; 
+  border-bottom-left-radius: 100%; 
+/* position: absolute; */
+  overflow: hidden;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.phone-container {
+  width: 30%;
+  position: relative;
+  left: 60px;
+  margin-left: 150px;
+  /* height: 40vh; */
+}
+.phone-border {
+  border: 10px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+  background-color: #f5f3f7;
+}
+.top-curve {
+  padding: 20px 100px;
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.user-content {
+  width: 100%;
+  padding: 0px 20px;
+  background: linear-gradient(
+    to right,
+    hsl(264, 100%, 61%) 0%,
+    hsl(293, 100%, 63%) 100%
+  );
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100px;
+}
+.userid {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+.username {
+  margin-left: 10px;
+}
+.username h1 {
+  font-size: 14px;
+  color: hsl(276, 100%, 81%);
+}
+.username p {
+  font-size: 12px;
+  color: hsl(276, 100%, 81%);
+}
+.userid img {
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.arrowone {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: hsl(271, 36%, 24%);
+  font-size: 46px;
+  font-weight: 700;
+}
+.paragraph {
+  color: hsl(270, 7%, 64%);
+  font-size: 20px;
+}
+.note {
+  width: 43%;
+}
+.leftchat {
+  margin-left: 10px;
+}
+.leftchat p {
+  color: hsl(276, 55%, 52%);
+  font-size: 12px;
+  font-weight: 500;
+}
+.c {
+  border-radius: 10px;
+  margin: 5px 0px 5px 0px;
+  background-color: #ede4f5;
+  /* font-size: 1px; */
+  font-weight: 500;
+  padding: 10px;
+  width: 70%;
+}
+.dogs {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.dogs img {
+  width: 70px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.rightchat {
+  margin-right: 10px;
+  }
+.rights {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.right {
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px;
+  border-radius: 15px;
+}
+.right:nth-child(1) {
+  margin-top: 10px;
+}
+.right p {
+  display: flex;
+  flex-direction: row-reverse;
+  color: hsl(271, 15%, 43%);
+  font-size: 12px;
+  font-weight: 500;
+}
+.time {
+  justify-content: space-between;
+  padding:  10px;
+  align-items: center;
+  width: 70%;
+  background: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%) 0%,
+    hsl(264, 100%, 61%) 100%
+  );
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.time h1 {
+  font-size: 12px;
+  color:hsl(276, 100%, 81%);
+  font-weight: 400;
+}
+.time span {
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-weight: 700;
+}
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.input{
+  width: 100%;
+}
+.fas{
+  color: hsl(0, 0%, 100%);
+}
+.submit input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin: 10px;
+  border-radius: 30px;
+}
+.submit input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+.send{
+    background-color: hsl(271, 36%, 24%);
+    padding: 8px 12px;
+    border-radius: 100%;
+    position: relative;
+    left: -2px
+}
+
+@media screen and (max-width:768px) {
+  .purple-background{
+    width: 70%;
+    height: 70vh;
+  }
+  .content{
+    display: block;
+    top: 50px;
+  }
+  .phone-container{
+    left: unset;
+    margin-left: unset;
+    width: 100%;
+  }
+  .note{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    }
+    .heading{
+      font-size: 40px;
+    }
+    .paragraph{
+      margin-top: 20px;
+      font-size: 16px;
+    }
+}
+
